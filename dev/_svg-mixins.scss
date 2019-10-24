@@ -1,3 +1,19 @@
-body{
-  background-color: red;
+@mixin svg-blank($color: 000000, $size: 24px) {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z' fill='%23#{$color}'/%3E%3C/svg%3E") no-repeat left top/$size;
+}
+
+@mixin svg-checkbox($color: 000000, $size: 24px) {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0zm0 0h24v24H0V0z'/%3E%3Cpath d='M16.59 7.58L10 14.17l-3.59-3.58L5 12l5 5 8-8zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z' fill='%23#{$color}'/%3E%3C/svg%3E") no-repeat left top/$size;
+}
+
+@mixin svg-question($color: 000000, $size: 48px) {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48.33 64.8'%3E%3Ctitle%3Equestion%3C/title%3E%3Cpath fill='%23#{$color}' class='cls-1' d='M21.73,34.47a41.42,41.42,0,0,1,6.17-6.75,35.14,35.14,0,0,0,4.36-4.55A6.73,6.73,0,0,0,33.66,19,6.2,6.2,0,0,0,31,13.72a11.79,11.79,0,0,0-7.06-1.93,15.84,15.84,0,0,0-7.52,1.75,16,16,0,0,0-5.53,4.91L0,12.06A25.2,25.2,0,0,1,10.21,3.15,34.38,34.38,0,0,1,25.47,0q10.35,0,16.6,4.41a14.15,14.15,0,0,1,6.26,12.24,16.11,16.11,0,0,1-1.22,6.48,17.19,17.19,0,0,1-3,4.73q-1.76,1.93-4.54,4.45a38.47,38.47,0,0,0-4.86,5,7.94,7.94,0,0,0-1.53,4.91H19.62A13.31,13.31,0,0,1,21.73,34.47Zm-1.44,28a7.76,7.76,0,0,1-2.47-5.81,7.51,7.51,0,0,1,2.43-5.71,8.68,8.68,0,0,1,6.21-2.3,8.68,8.68,0,0,1,6.21,2.3,7.51,7.51,0,0,1,2.43,5.71,7.77,7.77,0,0,1-2.48,5.81,8.52,8.52,0,0,1-6.16,2.38A8.54,8.54,0,0,1,20.29,62.42Z'/%3E%3C/svg%3E") no-repeat left top/$size;
+}
+
+@mixin svg-important($color: 000000, $size: 11px) {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11.52 42.48'%3E%3Ctitle%3Eimportant%3C/title%3E%3Cpath fill='%23#{$color}' class='cls-1' d='M1.65,40.89A5.17,5.17,0,0,1,0,37a5,5,0,0,1,1.62-3.81,5.79,5.79,0,0,1,4.14-1.53A5.79,5.79,0,0,1,9.9,33.21,5,5,0,0,1,11.52,37a5.17,5.17,0,0,1-1.65,3.87,5.69,5.69,0,0,1-4.11,1.59A5.69,5.69,0,0,1,1.65,40.89ZM.18,0H11.34L9.48,27.42H2Z'/%3E%3C/svg%3E") no-repeat left top/$size;
+}
+
+@mixin svg-dotline($color: 000000, $size: 90px) {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 91.93 32.54'%3E%3Ctitle%3Earrow%3C/title%3E%3Cline fill='none' stroke='%23#{$color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='6px' class='cls-1' x1='3' y1='3' x2='3' y2='3'/%3E%3Cline fill='none' stroke='%23#{$color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='6px' stroke-dasharray='0 12' class='cls-2' x1='3' y1='15' x2='3' y2='21'/%3E%3Cline fill='none' stroke='%23#{$color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='6px' class='cls-1' x1='3' y1='27' x2='3' y2='27'/%3E%3Cline fill='none' stroke='%23#{$color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='6px' stroke-dasharray='0 11.67' class='cls-3' x1='14.67' y1='27' x2='67.17' y2='27'/%3E%3Cline fill='none' stroke='%23#{$color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='6px' class='cls-1' x1='73' y1='27' x2='73' y2='27'/%3E%3Cpolygon fill='%23#{$color}' class='cls-4' points='91.93 26.53 81.52 20.52 81.52 32.54 91.93 26.53'/%3E%3C/svg%3E") no-repeat left top/$size;
 }
