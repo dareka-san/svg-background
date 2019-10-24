@@ -1,0 +1,27 @@
+{
+  "name": "svg-background",
+  "scripts": {
+    "start": "npm run build & npm run watch & npm run serve",
+    "watch": "node sass-compile.js watch",
+    "build": "node sass-compile.js build",
+    "serve": "http-server ./public -p 1234"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.2",
+    "chokidar": "^2.0.4",
+    "css-mqpacker": "^7.0.0",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.11.0",
+    "postcss": "^7.0.6",
+    "postcss-cli": "^6.0.1",
+    "rimraf": "^2.6.2",
+    "stylefmt": "^6.0.3"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Safari >= 5",
+    "ie >= 9",
+    "Android >= 4",
+    "iOS >= 7"
+  ]
+}
